@@ -10,7 +10,11 @@ public class Customer {
     private int accountNumber;
 
     public void setId(int newId) {
-        id = newId;
+        if (newId > 0 && newId <=10){
+            id = newId;
+        }else{
+            System.out.println("id должен быть от 1 до 10 включительно");
+        }
     }
     public void setSurname(String newSurname) {
         surname = newSurname;
