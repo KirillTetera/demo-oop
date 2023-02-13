@@ -16,5 +16,20 @@ public class DemoOOP {
         System.out.println(customerOne.getPatronymic());
         System.out.println(customerOne.getAccountNumber());
         System.out.println(customerOne.getCardNumber());
+
+        User userOne = new User();
+        userOne.setName("Джейк");
+
+        Student studentOne = new Student();
+        studentOne.setName("Ivan");
+        studentOne.setGrant(500);
+        System.out.println(studentOne.getIncomeGrant());
+
+        Person personOne = new Person();
+        personOne.setName("Peter");
+        personOne.setIncome(500);
+        personOne.setGrant(900);
+        System.out.println(personOne.getIncome());
+
     }
 }
